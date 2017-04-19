@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
-
+import React, { Component } from 'react'
 
 class Post extends Component {
-  formatName(name){
+  formatName (name) {
     return name.split('.').join(' ').replace(/[0-9]/g, '')
   }
-
-
-  render() {
+  render () {
     const post = this.props.attributes
     return (
-      <div className="container">
+      <div className='container'>
         <div className='content'>
-          <img alt='' className='picture-profile' src={post.pic}/>
+          <img alt='' className='picture-profile' src={post.pic} />
           <h3>{post.message}</h3>
         </div>
         <h3 className='name'>{this.formatName(post.username)}</h3>
@@ -22,4 +19,4 @@ class Post extends Component {
   }
 }
 
-export default Post;
+export default Post

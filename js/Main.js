@@ -6,39 +6,38 @@ import '../public/normalize.css'
 import '../public/style.css'
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {posts: []}
   }
 
-  componentDidMount() {
-    this.apiCall();
+  componentDidMount () {
+    this.apiCall()
   }
 
-  apiCall() {
+  apiCall () {
     return axios.get('http://private-227b9-jsonapifizzbuzz.apiary-mock.com/messages')
       .then((response) => {
         this.setState({ posts: response.data.data })
-      });
+      })
   }
 
-  render() {
-    const posts = this.state.posts.map(function(post, index){
-    return (
+  render () {
+    const posts = this.state.posts.map(function (post, index) {
+      return (
       <div key={index}>
-      <Post attributes={post.attributes}/>
+        <Post attributes={post.attributes} />
       </div>
         )
-      }
+    }
     )
-      return (
+    return (
       <div>
-      <Title/>
-      {posts}
+        <Title />
+        {posts}
       </div>
-    );
+    )
   }
 }
 
-
-export default Main;
+export default Main

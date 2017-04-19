@@ -9,8 +9,8 @@ import '../public/normalize.css'
 import '../public/style.css'
 
 class App extends React.Component {
-  render() {
-      return (
+  render () {
+    return (
       <BrowserRouter>
         <Match exactly pattern='/messages' component={Main} />
       </BrowserRouter>

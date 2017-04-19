@@ -14,6 +14,9 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.11",
+    "react-moment": "^0.2.2",
     "axios": "0.15.2",
     "express": "4.14.0",
     "history": "^4.4.0",
