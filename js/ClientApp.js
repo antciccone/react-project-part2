@@ -5,8 +5,8 @@ import Title from './Title'
 import Post from './Post'
 import Main from './Main'
 
-import '../public/normalize.css'
-import '../public/style.css'
+import '../public/normalize.scss'
+import '../public/style.scss'
 
 class App extends React.Component {
   render () {

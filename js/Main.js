@@ -2,8 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import Title from './Title'
 import Post from './Post'
-import '../public/normalize.css'
-import '../public/style.css'
+import '../public/normalize.scss'
+import '../public/style.scss'
 
 class Main extends React.Component {
   constructor (props) {
