@@ -7,16 +7,16 @@ I created this application using create-react-app and react router. I used axios
 
 ## Getting Started/Running Locally
 
-1. Install npm
+1. Install yarn
 ```shell
   npm install
 ```
-2. Install axios
+2. Bundle JS
 ```shell
-  npm install axios
+  webpack
 ```
 
-3. Running the server (should open http://localhost:8080/ in your browser automatically)
+3. Run the server http://localhost:8080/ 
 ```
 npm run dev
 ```

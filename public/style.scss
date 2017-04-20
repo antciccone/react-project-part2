@@ -1,14 +1,27 @@
 .container {
   padding-bottom: 20px;
+
+  .content {
+      width: 400px;
+      overflow: hidden;
+    .picture-profile {
+      border-radius: 50%;
+    }
+  }
+
+  .name {
+    text-transform:capitalize;
+    margin-left: 65px;
+  }
+
+  .user-agent, .date {
+    margin-left: 65px;
+  }
+  
 }
 
-.picture-profile {
-  border-radius: 50%;
-}
-
-.content {
-    width: 400px;
-    overflow: hidden;
+.title {
+  text-align: center;
 }
 
 .content {
@@ -16,13 +29,4 @@
   margin-right: 15px;
   float: left;
   }
-}
-
-.name {
-  text-transform:capitalize;
-  margin-left: 65px;
-}
-
-.user-agent, .date {
-  margin-left: 65px;
 }
